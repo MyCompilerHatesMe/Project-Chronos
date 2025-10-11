@@ -1,12 +1,8 @@
-import os
-import google.generativeai as genai
+from modules import web_search, text_reconstruction, report_generation
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+fragment = input("Enter the fragmented information: ")
+reconstruction = text_reconstruction(fragment)
+source = web_search(fragment)
+report = report_generation(reconstruction, source)
 
-model = genai.GenerativeModel("gemini-2.5-flash")
-
-prompt = input("Enter your prompt: ")
-
-response = model.generate_content(prompt)
-
-print(response.text)
+print(report)

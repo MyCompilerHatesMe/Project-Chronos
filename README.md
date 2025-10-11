@@ -4,7 +4,7 @@
 
 - Aadi Jha - SE25UMCS030
 - TVNS Saicharan - SE25UCSE071
-- Illipilli Sai Pranav Nihal - SE25UCSE096
+- Ilipilli Sai Pranav Nihal - SE25UCSE096
 
 ## Project Description
 
