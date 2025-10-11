@@ -12,7 +12,11 @@ Project Chronos is an Gemini-powered application designed to reconstruct fragmen
 
 ## Setup Instructions
 
-Coming soon!
+In your terminal run:
+
+```pip install -r requirements.txt``` to install all the requirements.
+```set GOOGLE_API_KEY=YOUR_API_KEY```
+You can get your api key from [here](https://aistudio.google.com/)
 
 ## Usage Guide
 
