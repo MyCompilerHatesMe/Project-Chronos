@@ -14,7 +14,7 @@ def text_reconstruction(fragment):
     return response.text.strip()
 
 def web_search(query):
-    api_key = os.getenv("SEARCH_API_KEY")
+    api_key = os.getenv("50cba12fe971d6c42d011b38510f4799268c17a65f8b528fedc4318e58b16166")
     params = {"q": query, "api_key": api_key}
     res = requests.get("https://serpapi.com/search", params=params).json()
     results = []
