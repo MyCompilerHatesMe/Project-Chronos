@@ -8,8 +8,10 @@ const port = 3000;
 app.use(express.json());
 app.use(express.static("public"))
 
+// initializes the google genai client
 const ai = new GoogleGenAI({});
 
+// defines the google search tool for the model
 const searchTool = {
     googleSearch: {},
 };
@@ -29,16 +31,22 @@ make sure the links are in the format of "Website->Link" ensure only the -> is b
 The 6th point means, no mark down formatting, only plain text. NO **, *, _. ONLY spacing.
 `
 
-
+// configuration for the gemini model
 const config = {
+    // specifies the tools the model can use
     tools: [searchTool],
+    // configuration for the model's thinking process
     thinkingConfig: {
+        // allows the model to dynamically allocate its thinking budget
         thinkingBudget: -1, //dynamic thinking
     },
+    // sets the system-level instructions for the model
     systemInstruction: sysInstruction,
 }
 
+// function to generate text using the gemini api
 async function generateText(prompt) {
+    // sends a request to the gemini model to generate content
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",
         contents: prompt,
@@ -47,6 +55,7 @@ async function generateText(prompt) {
     return response.text;
 }
 
+// endpoint to handle text generation requests
 app.post("/generate", async (req, res) => {
     try{
         const text = await generateText(req.body.fragment);
