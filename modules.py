@@ -1,17 +1,20 @@
 import google.generativeai as genai
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 def text_reconstruction(fragment):
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     prompt = f"Reconstruct this old digital text and explain its slang or missing words:\n\n'{fragment}'"
     response = model.generate_content(prompt)
     return response.text.strip()
 
 def web_search(query):
-    api_key = os.getenv("SEARCH_API_KEY")
+    api_key = os.getenv("50cba12fe971d6c42d011b38510f4799268c17a65f8b528fedc4318e58b16166")
     params = {"q": query, "api_key": api_key}
     res = requests.get("https://serpapi.com/search", params=params).json()
     results = []
@@ -20,11 +23,11 @@ def web_search(query):
     return results
 
 
-def report_generation(fragment, reconstruction, sources):
+def report_generation(fragment, reconstruction, source):
     report = "--- RECONSTRUCTION REPORT ---\n\n"
     report += f"[Original Fragment]\n> {fragment}\n\n"
     report += f"[AI-Reconstructed Text]\n> {reconstruction}\n\n"
     report += "[Contextual Sources]\n"
-    for s in sources:
+    for s in source:
         report += f"* {s}\n"
     return report
