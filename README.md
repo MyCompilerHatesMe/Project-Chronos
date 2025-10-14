@@ -12,14 +12,14 @@ Project Chronos is an Gemini-powered application designed to reconstruct fragmen
 
 ## Setup Instructions
 
-### For the python CLI:
-In your terminal run:
+### For the Python CLI:
+Paste the following command in your terminal and run it to install all the required packages.
 
-```pip install -r requirements.txt``` to install all the requirements.
+```pip install -r requirements.txt```
 
-```set GOOGLE_API_KEY=YOUR_API_KEY```
+Create a ```.env``` file in the project directory and paste ```set GOOGLE_API_KEY=<YOUR_API_KEY>``` in the file
 
-You can get your api key from [the Google AI Studio](https://aistudio.google.com/)
+Get your API key from the [Google AI Studio](https://aistudio.google.com/) and paste it in place of ```<YOUR_API_KEY>```
 
 ### For the website.
 
@@ -40,7 +40,7 @@ git clone https://github.com/MyCompilerHatesMe/Project-Chronos.git
 #### Change the present working directory
 
 ```bash
-cd webstie
+cd website
 ```
 
 #### Create an Environment file
