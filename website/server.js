@@ -8,6 +8,10 @@ const port = 3000;
 app.use(express.json());
 app.use(express.static("public"))
 
+if (!process.env.GEMINI_API_KEY) {
+  throw new Error("GEMINI_API_KEY is not defined in your .env file");
+}
+
 // initializes the google genai client
 const ai = new GoogleGenAI({});
 
