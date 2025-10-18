@@ -5,6 +5,7 @@
 - Aadi Jha - SE25UMCS030
 - TVNS Saicharan - SE25UCSE071
 - I Sai Pranav Nihal - SE25UCSE096
+- Siddarth Sreenivasulu Reddy - SE25UECM042
 
 ## Project Description
 
@@ -13,15 +14,23 @@ Project Chronos is an Gemini-powered application designed to reconstruct fragmen
 ## Setup Instructions
 
 ### For the Python CLI:
+
+#### CLI 1:
 Paste the following command in your terminal and run it to install all the required packages.
 
 ```pip install -r requirements.txt```
 
-Create a ```.env``` file in the project directory and paste ```set GOOGLE_API_KEY=<YOUR_API_KEY>``` in the file
+Create a ```.env``` file in the project directory and paste the following in the file:
+```GOOGLE_API_KEY = <YOUR_API_KEY>```
+```SEARCH_API_KEY = <YOUR_API_KEY>```
 
-Get your API key from the [Google AI Studio](https://aistudio.google.com/) and paste it in place of ```<YOUR_API_KEY>```
+Get your Google API key from the [Google AI Studio](https://aistudio.google.com/) and paste it in place of ```<YOUR_API_KEY>```
 
-### For the website.
+In a similar way, get your Search API key from [Serp API](https://serpapi.com/) and paste it in place of ```<YOUR_API_KEY>```
+
+Save the file and exit
+
+### For the website:
 
 #### Prerequisites
 
@@ -65,6 +74,14 @@ Go into your browser and type in ```localhost:3000``` to access the project.
 
 
 ## Usage Guide
+
+### For Python CLI:
+
+#### CLI 1:
+
+Once the ```.env``` file is ready, go to ```main.py``` and run the file. 
+
+Enter the fragmented text into the terminal and the recontruction report will be generated along with the reconstructed text and sources used.
 
 ### For the website
 
