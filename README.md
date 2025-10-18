@@ -22,6 +22,7 @@ Paste the following command in your terminal and run it to install all the requi
 ```pip install -r requirements.txt```
 
 Create a ```.env``` file in the project directory and paste the following in the file:
+
 ```GOOGLE_API_KEY = <YOUR_API_KEY>```
 ```SEARCH_API_KEY = <YOUR_API_KEY>```
 
