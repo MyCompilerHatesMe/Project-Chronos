@@ -2,10 +2,10 @@
 
 ## Team Details
 
-- Aadi Jha - SE25UMCS030
-- TVNS Saicharan - SE25UCSE071
-- I Sai Pranav Nihal - SE25UCSE096
-- Siddarth Sreenivasulu Reddy - SE25UECM042
+- Aadi Jha - SE25UMCS030 (Website)
+- TVNS Saicharan - SE25UCSE071 (CLI 1)
+- I Sai Pranav Nihal - SE25UCSE096 (CLI 2)
+- Siddarth Sreenivasulu Reddy - SE25UECM042 (Project Manager)
 
 ## Project Description
 
