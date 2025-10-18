@@ -377,7 +377,7 @@ Return ONLY the reconstructed text, nothing else."""
 # Example usage
 if __name__ == "__main__":
     # Set your Gemini API key
-    GEMINI_API_KEY = "Your API GOOGLE GEMINI API KEY"
+    GEMINI_API_KEY = "<YOUR_API_KEY>"
 
     # Initialize reconstructor
     reconstructor = FragmentReconstructor(GEMINI_API_KEY)
