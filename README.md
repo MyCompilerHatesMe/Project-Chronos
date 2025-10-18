@@ -66,4 +66,6 @@ Go into your browser and type in ```localhost:3000``` to access the project.
 
 ## Usage Guide
 
-Coming soon!
+### For the website
+
+Simply visit ```localhost:3000``` and type in your prompt, the reconstructed report will appear below.
