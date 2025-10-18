@@ -60,7 +60,9 @@ cd website
 
 #### Create an Environment file
 
-Create a ```.env``` file and inside the website directory and paste in ```GOOGLE_API_KEY=YOUR_API_KEY_HERE```
+Create a ```.env``` file and inside the website directory and paste in ```GOOGLE_API_KEY=<YOUR_API_KEY_HERE>```
+
+the above step is the same as the one for the CLI.
 
 #### Installing packages
 
@@ -92,3 +94,7 @@ Enter the fragmented text into the terminal and the recontruction report will be
 Once the API key is entered in ```CLI.py```, save the file and run it.
 
 Enter the fragmented text into the terminal and the recontruction report will be generated along with the reconstructed text and sources used.
+
+### For the website
+
+Simply visit ```localhost:3000``` and type in your prompt, the reconstructed report will appear below.
